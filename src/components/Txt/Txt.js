@@ -40,6 +40,8 @@ export default class Txt extends Component {
       light,
       btn,
       strike,
+      outline,
+      noWrap,
     } = this.props;
 
     return classnames(
@@ -54,6 +56,8 @@ export default class Txt extends Component {
       { 'txt_bold': bold },
       { 'txt_light': light },
       { 'txt_strike': strike },
+      { 'txt_outline': outline },
+      { 'txt_noWrap': noWrap },
     );
   }
 

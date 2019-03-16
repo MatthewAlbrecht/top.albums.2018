@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
+import AlbumSection from 'components/AlbumSection/AlbumSection';
+
 export default class Home extends Component {
   render() {
     return (
       <>
-        <h1>Home Page</h1>
+        <AlbumSection></AlbumSection>
+        <AlbumSection></AlbumSection>
+        <AlbumSection></AlbumSection>
+        <AlbumSection></AlbumSection>
       </>
     );
   }

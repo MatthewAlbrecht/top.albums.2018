@@ -1,0 +1,59 @@
+/* ---------------------------------------------
+  Album Section
+--------------------------------------------- */
+
+.albumSection {
+  position: relative;
+  display: inline-block;
+  height: 100vh;
+  width: 36rem;
+  padding: rhythm(4) rhythm(4) rhythm(2);
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .0;
+    z-index: -1;
+    background: url('assets/images/grey_@2X.png') repeat;
+    background-size: 200%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image:
+      linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)),
+      linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
+      linear-gradient(to top, #88d3ce, #13547a);
+  }
+}
+
+.albumSection-img {
+  max-width: 100%;
+  position: absolute;
+  right: -18.5rem;
+  top: 50%;
+  transform: rotate(-27deg) translateY(-50%);
+  box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.45);
+  z-index: 2;
+
+
+}
+
+.albumSection-songTitles {
+  position: absolute;
+  right: 11.5rem;
+  transform: translateX(100%);
+  top: -1.5rem;
+  opacity: .1;
+}

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import routes from 'config/routes';
-import Footer from 'components/Footer/Footer';
-import Header from 'components/Header/Header';
 import TabListener from 'components/TabListener/TabListener';
 import ScrollToTop from 'components/ScrollToTop/ScrollToTop';
 
@@ -11,7 +9,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Header/>
           <main>
             {routes.map((route, index) => (
               <Route
@@ -22,7 +19,6 @@ class App extends Component {
               />
             ))}
           </main>
-          <Footer/>
           <TabListener/>
           <ScrollToTop/>
         </div>
