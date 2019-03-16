@@ -1,9 +1,9 @@
 import React from 'react';
-import Info from './Icons/Info';
+import Spotify from './Icons/Spotify';
 
 export default function Icon(props) {
   const iconMap = {
-    'Info': <Info/>,
+    'Spotify': <Spotify/>,
   };
 
   return (

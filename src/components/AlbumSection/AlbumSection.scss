@@ -1,10 +1,18 @@
 /* ---------------------------------------------
   Album Section
 --------------------------------------------- */
+.albums {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
 .albumSection {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
   height: 100vh;
   width: 36rem;
   padding: rhythm(4) rhythm(4) rhythm(2);
@@ -36,6 +44,12 @@
       linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
       linear-gradient(to top, #88d3ce, #13547a);
   }
+
+  &:hover {
+    .albumSection-img {
+      // animation: peak .4s $EASEOUT_QUAD 1;
+    }
+  }
 }
 
 .albumSection-img {
@@ -45,15 +59,26 @@
   top: 50%;
   transform: rotate(-27deg) translateY(-50%);
   box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.45);
+  transition: transform .2s $EASEINOUT_QUAD;
   z-index: 2;
-
-
 }
 
 .albumSection-songTitles {
   position: absolute;
-  right: 11.5rem;
+  right: 13.5rem;
   transform: translateX(100%);
   top: -1.5rem;
   opacity: .1;
+}
+
+@keyframes peak {
+  0% {
+    transform: rotate(-27deg) translateY(-50%);
+  }
+  50% {
+    transform: rotate(-20deg) translateY(-50%);
+  }
+  100% {
+    transform: rotate(-27deg) translateY(-50%);
+  }
 }

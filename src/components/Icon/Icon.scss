@@ -19,45 +19,15 @@
   }
 }
 
-.icon_store {
-  height: 4rem;
-  width: 13.3rem;
-
-  &Hero {
-    height: 3.2rem;
-    width: 10.6rem;
-  }
-
+.icon_spotify {
   .primaryFill {
-    fill: $COLOR_LIGHTEST;
-    transition: fill .2s $EASEOUT_QUAD;
-  }
-}
-
-.icon_strava {
-  height: 5.2rem;
-  width: 12rem;
-}
-
-.icon_selectDropdown {
-  height: 1.4rem;
-  width: .9rem;
-}
-
-.icon_info {
-  .primaryFill {
-    fill: $COLOR_GREY;
-  }
-  .primaryStroke {
-    stroke: $COLOR_GREY;
+    fill: rgba($COLOR_LIGHTEST, .255);
+    transition: fill .3s $EASEINOUT_QUAD;
   }
 
   &:hover {
     .primaryFill {
-      fill: $COLOR_DARKEST;
-    }
-    .primaryStroke {
-      stroke: $COLOR_DARKEST;
+      fill: rgba($COLOR_LIGHTEST, 1);
     }
   }
 }
@@ -73,6 +43,7 @@
 
 @include createIconSize(10);
 @include createIconSize(16);
+@include createIconSize(33);
 
 
 @include breakpoint(breakpoint-size('md')) {
