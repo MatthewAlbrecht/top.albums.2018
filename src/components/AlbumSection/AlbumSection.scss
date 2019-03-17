@@ -2,9 +2,7 @@
   Album Section
 --------------------------------------------- */
 .albums {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
+  height: 100vh;
 }
 
 .albumSection {
@@ -39,10 +37,6 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image:
-      linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)),
-      linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
-      linear-gradient(to top, #88d3ce, #13547a);
   }
 
   &:hover {

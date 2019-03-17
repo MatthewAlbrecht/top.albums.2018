@@ -1,0 +1,47 @@
+/* ---------------------------------------------
+  Album Section
+--------------------------------------------- */
+.albumSection {
+  &:before {
+    background-image:
+      linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)),
+      linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
+      linear-gradient(to top, #88d3ce, #13547a);
+  }
+}
+
+
+@mixin build-bg-color($name, $color1, $color2) {
+  .albumSection_#{$name} {
+    &:before {
+      background-image:
+      // linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)),
+      linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
+      linear-gradient(to top, $color1, $color2);
+    }
+  }
+}
+
+@include build-bg-color('bg01', #88d3ce, #13547a);
+@include build-bg-color('bg02', #8bd2c5, #4bb4a0);
+@include build-bg-color('bg03', #ffecd2, #fcb69f);
+@include build-bg-color('bg04', #efdd77, #d06065);
+@include build-bg-color('bg05', #9ec599, #3d504f);
+@include build-bg-color('bg06', #ffc3a0, #db7a8b);
+@include build-bg-color('bg07', #855689, #38243d);
+@include build-bg-color('bg08', #1e2d4b, #130a2e);
+@include build-bg-color('bg09', #f9d423, #f83600);
+@include build-bg-color('bg10', #fbc652, #e08728);
+@include build-bg-color('bg11', #0386c5, #a1649e);
+@include build-bg-color('bg12', #a0ddbf, #4e9099);
+@include build-bg-color('bg13', #860606, #4f0000);
+@include build-bg-color('bg14', #1c78cc, #183c96);
+@include build-bg-color('bg15', #1e2d4b, #130a2e);
+@include build-bg-color('bg16', #51c7d5, #004975);
+@include build-bg-color('bg17', #9caff5, #685ab0);
+@include build-bg-color('bg18', #b20102, #620203);
+@include build-bg-color('bg19', #fe9dc5, #d64e86);
+@include build-bg-color('bg20', #3a004f, #2a0009);
+@include build-bg-color('bg21', #033b4f, #011e21);
+@include build-bg-color('bg22', #7b75a5, #181e3b);
+@include build-bg-color('bg23', #388a5c, #245282);

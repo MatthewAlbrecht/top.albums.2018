@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <>
           <main>
             {routes.map((route, index) => (
               <Route
@@ -21,7 +21,7 @@ class App extends Component {
           </main>
           <TabListener/>
           <ScrollToTop/>
-        </div>
+        </>
       </Router>
     );
   }

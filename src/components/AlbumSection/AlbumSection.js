@@ -15,6 +15,7 @@ export default function AlbumSection(props) {
     songTitles,
     genre,
     spotifyUrl,
+    bgNumber,
   } = props;
 
   function get50SongTitles() {
@@ -42,8 +43,10 @@ export default function AlbumSection(props) {
     return result;
   }
 
+  const className = `albumSection albumSection_${bgNumber}`
+
   return (
-    <section className="albumSection">
+    <section className={className}>
       <div className="albumSection-top">
         <Txt
           tag="h2"
