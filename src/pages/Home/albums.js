@@ -168,7 +168,7 @@ export default [
       "https://open.spotify.com/album/1nvzBC1M3dlCMIxfUCBhlO?si=D1BmqyiySLGZSqT7dvuxyg"
   },
   {
-    name: "Uniform Distortion/Clarity",
+    name: "Uniform Distortion / Clarity",
     artist: "Jim James",
     number: "09",
     imageName: "uniformclarity",
@@ -189,7 +189,7 @@ export default [
       "https://open.spotify.com/album/1nvzBC1M3dlCMIxfUCBhlO?si=D1BmqyiySLGZSqT7dvuxyg"
   },
   {
-    name: "Steel Mogu/Clear Tamei",
+    name: "Steel Mogu / Clear Tamei",
     artist: "Iglooghost",
     number: "10",
     imageName: "steelmogu",

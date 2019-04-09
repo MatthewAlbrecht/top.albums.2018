@@ -12,8 +12,8 @@
   justify-content: space-between;
   flex-direction: column;
   height: 100vh;
-  width: 36rem;
-  padding: rhythm(4) rhythm(4) rhythm(2);
+  width: 25rem;
+  padding: rhythm(2);
   overflow: hidden;
 
   &:after {
@@ -49,7 +49,7 @@
 .albumSection-img {
   max-width: 100%;
   position: absolute;
-  right: -18.5rem;
+  right: -12.5rem;
   top: 50%;
   transform: rotate(-27deg) translateY(-50%);
   box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.45);
@@ -59,9 +59,9 @@
 
 .albumSection-songTitles {
   position: absolute;
-  right: 13.5rem;
+  right: 10rem;
   transform: translateX(100%);
-  top: -1.5rem;
+  top: -2rem;
   opacity: .1;
 }
 

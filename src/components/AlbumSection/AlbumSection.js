@@ -36,7 +36,7 @@ export default function AlbumSection(props) {
         key={index}
         tag="span"
         content="&nbsp;"
-        size="24"
+        size="18"
         line="10"
       />)
     }
@@ -51,7 +51,7 @@ export default function AlbumSection(props) {
         <Txt
           tag="h2"
           content={number}
-          size="70"
+          size="52"
           color="GreyDark"
           line="10"
           uppercase
@@ -62,7 +62,7 @@ export default function AlbumSection(props) {
           <Txt
             tag="h1"
             content={name}
-            size="36"
+            size="26"
             color="Lightest"
             space="1"
             bold
@@ -72,7 +72,8 @@ export default function AlbumSection(props) {
           <Txt
             tag="h3"
             content={artist}
-            size="18"
+            size="12"
+            space="1"
             color="Lightest"
           />
         </Box>
@@ -91,7 +92,7 @@ export default function AlbumSection(props) {
               <Txt
                 tag="span"
                 content={`${song} ${song}`}
-                size="24"
+                size="18"
                 color="Lightest"
                 line="10"
                 uppercase
@@ -104,13 +105,13 @@ export default function AlbumSection(props) {
       </div>
       <div className="albumSection-bottom">
         <a href={spotifyUrl} target="_blank" rel="noopener noreferrer">
-          <Icon type="Spotify" className="icon icon_spotify icon_33"></Icon>
+          <Icon type="Spotify" className="icon icon_spotify icon_24"></Icon>
         </a>
         <Box classes="top1">
           <Txt
             tag="span"
             content={genre}
-            size="14"
+            size="12"
             color="Lightest"
             space="1"
           />
